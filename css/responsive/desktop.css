@@ -1,0 +1,128 @@
+
+@media (min-width: 1024px) {
+
+  .container {
+    width: min(
+      100% - (var(--space-8) * 2),
+      var(--container-max-width)
+    );
+
+    margin-inline: auto;
+  }
+
+
+  /* Typography */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+
+  /* Sections */
+
+  .section {
+    padding-block: var(--space-16);
+  }
+
+  .page-section {
+    padding-block: var(--space-16);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-10);
+  }
+
+
+  /* Grids */
+
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+
+  /* Navigation */
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+
+  /* Forms */
+
+  .form-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+
+  /* Tables */
+
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+
+  /* Dashboard */
+
+  .dashboard-layout {
+    grid-template-columns: var(--sidebar-width) 1fr;
+  }
+
+  .dashboard-sidebar {
+    display: block;
+  }
+
+}
+
+
+/* Large Desktop */
+
+@media (min-width: 1440px) {
+
+  .container {
+    width: min(
+      100% - (var(--space-10) * 2),
+      var(--container-max-width)
+    );
+  }
+
+
+  .card-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+
+  .section {
+    padding-block: var(--space-20);
+  }
+
+
+  .dashboard-layout {
+    grid-template-columns: var(--sidebar-width) 1fr;
+  }
+
+}

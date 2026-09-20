@@ -1,0 +1,159 @@
+
+:root {
+
+  /* -------------------------------------------------------
+     Base Spacing Scale
+     ------------------------------------------------------- */
+
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-7: 1.75rem;   /* 28px */
+  --space-8: 2rem;      /* 32px */
+  --space-9: 2.25rem;   /* 36px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-11: 2.75rem;  /* 44px */
+  --space-12: 3rem;     /* 48px */
+  --space-13: 3.25rem;  /* 52px */
+  --space-14: 3.5rem;   /* 56px */
+  --space-15: 3.75rem;  /* 60px */
+  --space-16: 4rem;     /* 64px */
+  --space-17: 4.25rem;  /* 68px */
+  --space-18: 4.5rem;   /* 72px */
+  --space-19: 4.75rem;  /* 76px */
+  --space-20: 5rem;     /* 80px */
+  --space-21: 5.5rem;   /* 88px */
+  --space-22: 6rem;     /* 96px */
+  --space-23: 7rem;     /* 112px */
+  --space-24: 8rem;     /* 128px */
+
+
+  /* -------------------------------------------------------
+     Component Spacing
+     ------------------------------------------------------- */
+
+  --spacing-component-xs: var(--space-2);
+  --spacing-component-sm: var(--space-3);
+  --spacing-component-md: var(--space-4);
+  --spacing-component-lg: var(--space-6);
+  --spacing-component-xl: var(--space-8);
+
+
+  /* -------------------------------------------------------
+     Card Spacing
+     ------------------------------------------------------- */
+
+  --card-padding-sm: var(--space-3);
+  --card-padding-md: var(--space-4);
+  --card-padding-lg: var(--space-6);
+  --card-padding-xl: var(--space-8);
+
+  --card-gap-sm: var(--space-2);
+  --card-gap-md: var(--space-4);
+  --card-gap-lg: var(--space-6);
+
+
+  /* -------------------------------------------------------
+     Form Spacing
+     ------------------------------------------------------- */
+
+  --form-gap-xs: var(--space-2);
+  --form-gap-sm: var(--space-3);
+  --form-gap-md: var(--space-4);
+  --form-gap-lg: var(--space-6);
+
+  --form-field-gap: var(--space-2);
+
+
+  /* -------------------------------------------------------
+     Section Spacing
+     ------------------------------------------------------- */
+
+  --section-padding-y-sm: var(--space-8);
+  --section-padding-y-md: var(--space-12);
+  --section-padding-y-lg: var(--space-16);
+  --section-padding-y-xl: var(--space-22);
+
+  --section-gap-sm: var(--space-6);
+  --section-gap-md: var(--space-8);
+  --section-gap-lg: var(--space-12);
+
+
+  /* -------------------------------------------------------
+     Page Spacing
+     ------------------------------------------------------- */
+
+  --page-padding-x: var(--space-4);
+  --page-padding-y: var(--space-8);
+
+  --page-padding-x-sm: var(--space-6);
+  --page-padding-x-lg: var(--space-8);
+
+
+  /* -------------------------------------------------------
+     Navigation Spacing
+     ------------------------------------------------------- */
+
+  --nav-gap-sm: var(--space-2);
+  --nav-gap-md: var(--space-4);
+  --nav-gap-lg: var(--space-6);
+
+  --nav-item-padding-x: var(--space-3);
+  --nav-item-padding-y: var(--space-2);
+
+
+  /* -------------------------------------------------------
+     Dashboard Spacing
+     ------------------------------------------------------- */
+
+  --dashboard-gap: var(--space-6);
+  --dashboard-section-gap: var(--space-8);
+  --dashboard-card-gap: var(--space-4);
+
+
+  /* -------------------------------------------------------
+     Content Spacing
+     ------------------------------------------------------- */
+
+  --content-gap-xs: var(--space-2);
+  --content-gap-sm: var(--space-4);
+  --content-gap-md: var(--space-6);
+  --content-gap-lg: var(--space-8);
+  --content-gap-xl: var(--space-12);
+
+
+  /* -------------------------------------------------------
+     Inline Spacing
+     ------------------------------------------------------- */
+
+  --inline-gap-xs: var(--space-1);
+  --inline-gap-sm: var(--space-2);
+  --inline-gap-md: var(--space-3);
+  --inline-gap-lg: var(--space-4);
+  --inline-gap-xl: var(--space-6);
+
+
+  /* -------------------------------------------------------
+     Modal Spacing
+     ------------------------------------------------------- */
+
+  --modal-padding-sm: var(--space-4);
+  --modal-padding-md: var(--space-6);
+  --modal-padding-lg: var(--space-8);
+
+  --modal-gap: var(--space-4);
+
+
+  /* -------------------------------------------------------
+     Footer Spacing
+     ------------------------------------------------------- */
+
+  --footer-padding-y: var(--space-12);
+  --footer-padding-x: var(--space-4);
+
+  --footer-section-gap: var(--space-8);
+  --footer-link-gap: var(--space-2);
+}

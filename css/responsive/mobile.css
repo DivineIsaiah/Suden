@@ -1,0 +1,107 @@
+
+@media (max-width: 767px) {
+
+  .container {
+    width: 100%;
+    padding-inline: var(--space-4);
+  }
+
+
+  /* Typography */
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+
+  /* Sections */
+
+  .section {
+    padding-block: var(--space-12);
+  }
+
+  .page-section {
+    padding-block: var(--space-10);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-6);
+  }
+
+
+  /* Grids */
+
+  .grid,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Navigation */
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+
+  /* Buttons */
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button-group .btn {
+    width: 100%;
+  }
+
+
+  /* Forms */
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* Tables */
+
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+
+  /* Images */
+
+  .hero-image {
+    width: 100%;
+  }
+
+
+  /* Dashboard */
+
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-sidebar {
+    display: none;
+  }
+
+  .dashboard-content {
+    width: 100%;
+  }
+
+}

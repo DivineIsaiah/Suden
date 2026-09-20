@@ -4,10 +4,11 @@
   "description": "SUDEN is a subscription-based educational technology platform designed to provide structured, accessible, and practical online learning.",
   "main": "index.js",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DivineIsaiah/Suden.git"
@@ -15,11 +16,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/DivineIsaiah/Suden/issues"
-  },
-  "homepage": "https://github.com/DivineIsaiah/Suden#readme",
   "devDependencies": {
     "vite": "^8.3.0"
   }

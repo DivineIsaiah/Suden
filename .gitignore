@@ -1,0 +1,63 @@
+
+# Dependencies
+node_modules/
+vendor/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+out/
+coverage/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editor settings
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.iml
+
+# Local development
+.local/
+.cache/
+
+# Generated files
+*.map
+
+# Certificates / private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Firebase / service account credentials
+service-account*.json
+firebase-adminsdk*.json
+
+# Testing artifacts
+test-results/
+playwright-report/
+
+# Personal / machine-specific files
+*.code-workspace

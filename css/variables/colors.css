@@ -1,0 +1,277 @@
+/* =========================================================
+   SUDEN — COLOR SYSTEM
+   =========================================================
+
+   BRAND
+   Red  → Power, authority, primary interaction
+   Gold → Wisdom, excellence, achievement
+
+   FOUNDATION
+   White → Knowledge, clarity, light surfaces
+   Black → Instruction, structure, dark surfaces
+
+   SEMANTIC
+   Green → Success, progress, completion
+   Amber → Warning, attention
+   Red   → Errors, destructive actions
+   Blue  → Information, neutral system messages
+
+   RULE
+   Brand colours identify SUDEN.
+   Semantic colours communicate system states.
+   Do not use semantic colours as brand colours.
+
+   HSL VARIABLES
+   Colour variables store HSL values without the hsl()
+   function so opacity can be controlled at the point of use.
+
+   Example:
+   color: hsl(var(--red));
+   background: hsl(var(--red) / 0.1);
+   ========================================================= */
+
+
+:root {
+
+    /* =====================================================
+       BRAND
+       ===================================================== */
+
+
+    /* -----------------------------------------------------
+       RED — Primary Brand
+       -----------------------------------------------------
+
+       Represents:
+       • Power
+       • Authority
+       • Confidence
+       • Action
+
+       Use for:
+       • Primary buttons
+       • Links
+       • Active navigation
+       • Selected states
+       • Important interactions
+       • Brand elements
+       • SUDEN logo text
+
+       Primary:
+       hsl(0 97% 30%)
+       ----------------------------------------------------- */
+
+    --red: 0 97% 30%;
+
+
+    /* -----------------------------------------------------
+       GOLD — Brand Accent
+       -----------------------------------------------------
+
+       Represents:
+       • Wisdom
+       • Excellence
+       • Achievement
+       • Value
+
+       Use SPARINGLY for:
+       • Logo accents
+       • Achievements
+       • Premium indicators
+       • Important statistics
+       • Highlights
+       • Decorative details
+
+       Gold supports the red.
+       It should not compete with the primary brand colour.
+       ----------------------------------------------------- */
+
+    --gold: 42 48% 57%;
+
+
+    /* =====================================================
+       FOUNDATION
+       ===================================================== */
+
+
+    /* -----------------------------------------------------
+       WHITE — Light Foundation
+       -----------------------------------------------------
+
+       Represents:
+       • Clarity
+       • Knowledge
+       • Simplicity
+
+       Use for:
+       • Page backgrounds
+       • Cards
+       • Inputs
+       • Navigation
+       • Light surfaces
+       ----------------------------------------------------- */
+
+    --white: 0 0% 100%;
+
+
+    /* -----------------------------------------------------
+       BLACK — Dark Foundation
+       -----------------------------------------------------
+
+       Represents:
+       • Instruction
+       • Structure
+       • Focus
+       • Depth
+
+       Use for:
+       • Dark page backgrounds
+       • Dark sections
+       • Dark surfaces
+       ----------------------------------------------------- */
+
+    --black: 0 0% 4%;
+
+
+    /* =====================================================
+       TEXT
+       ===================================================== */
+
+
+    /* -----------------------------------------------------
+       LIGHT THEME TEXT
+       -----------------------------------------------------
+
+       Primary, secondary and supporting text on light
+       backgrounds.
+       ----------------------------------------------------- */
+
+    --txt: 0 0% 7%;
+    --txt-m: 0 0% 33%;
+    --txt-l: 0 0% 47%;
+
+
+    /* -----------------------------------------------------
+       DARK THEME TEXT
+       -----------------------------------------------------
+
+       Primary, secondary and supporting text on dark
+       backgrounds.
+       ----------------------------------------------------- */
+
+    --txt-w: 0 0% 100%;
+    --txt-w-m: 0 0% 83%;
+    --txt-w-l: 0 0% 64%;
+
+
+    /* =====================================================
+       SEMANTIC
+       ===================================================== */
+
+
+    /* -----------------------------------------------------
+       GREEN — Success
+       -----------------------------------------------------
+
+       Represents:
+       • Success
+       • Completion
+       • Progress
+       • Verification
+       • Positive results
+
+       NOT a brand colour.
+       ----------------------------------------------------- */
+
+    --green: 152 64% 31%;
+
+
+    /* -----------------------------------------------------
+       AMBER — Warning
+       -----------------------------------------------------
+
+       Represents:
+       • Attention
+       • Caution
+       • Incomplete states
+       • Approaching deadlines
+
+       NOT a brand colour.
+       ----------------------------------------------------- */
+
+    --amber: 32 95% 44%;
+
+
+    /* -----------------------------------------------------
+       ERROR RED — System Error
+       -----------------------------------------------------
+
+       IMPORTANT:
+       This is NOT the SUDEN brand red.
+
+       Use for:
+       • Validation errors
+       • Failed actions
+       • Destructive states
+       • Critical problems
+
+       Brand red = SUDEN identity.
+       Error red = something went wrong.
+
+       NOT a brand colour.
+       ----------------------------------------------------- */
+
+    --err: 0 72% 51%;
+
+
+    /* -----------------------------------------------------
+       BLUE — Information
+       -----------------------------------------------------
+
+       Represents:
+       • Information
+       • Tips
+       • Neutral notifications
+       • System messages
+       • Helpful instructional hints
+
+       This is a semantic colour, NOT a brand colour.
+       ----------------------------------------------------- */
+
+    --info: 217 91% 53%;
+
+
+    /* =====================================================
+       BORDERS
+       =====================================================
+
+       Neutral borders provide structure without introducing
+       unnecessary colour into the interface.
+       ===================================================== */
+
+    --bd: 0 0% 90%;
+    --bd-d: 0 0% 20%;
+
+
+    /* =====================================================
+       THEME SURFACES
+       =====================================================
+
+       These variables make theme usage explicit and keep
+       components from scattering raw colour values.
+       ===================================================== */
+
+
+    /* LIGHT THEME */
+
+    --bg: hsl(var(--white));
+    --surface: hsl(var(--white));
+    --text: hsl(var(--txt));
+
+
+    /* DARK THEME */
+
+    --bg-d: hsl(var(--black));
+    --surface-d: hsl(0 0% 8%);
+    --text-d: hsl(var(--txt-w));
+}

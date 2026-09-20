@@ -1,0 +1,150 @@
+/* 
+   LOAD ORDER
+   1. Reset
+   2. Design variables
+   3. Base styles
+   4. Typography
+   5. Layout
+   6. Components
+   7. Pages
+   8. Responsive overrides
+
+
+/* =========================================================
+   1. RESET
+   ========================================================= */
+
+@import "./base/reset.css";
+
+
+/* =========================================================
+   2. VARIABLES
+   ========================================================= */
+
+/* Colour tokens */
+@import "./variables/colors.css";
+
+/* Spacing tokens */
+@import "./variables/spacing.css";
+
+/* Typography tokens */
+@import "./variables/typography.css";
+
+/* Shared variable aliases / additional tokens */
+@import "./variables/variables.css";
+
+
+/* =========================================================
+   3. BASE
+   ========================================================= */
+
+/* Global document styles */
+@import "./base/global.css";
+
+/* Font definition */
+@import "./base/font.css";
+
+
+/* =========================================================
+   4. LAYOUT
+   ========================================================= */
+
+/* Page width and horizontal alignment */
+@import "./layout/container.css";
+
+/* Site header */
+@import "./layout/header.css";
+
+/* Navigation */
+@import "./layout/navbar.css";
+
+/* Sidebar */
+@import "./layout/sidebar.css";
+
+/* Footer */
+@import "./layout/footer.css";
+
+
+/* =========================================================
+   5. COMPONENTS
+   ========================================================= */
+
+/* Buttons */
+@import "./components/buttons.css";
+
+/* Cards */
+@import "./components/cards.css";
+
+/* Forms */
+@import "./components/forms.css";
+
+/* Badges */
+@import "./components/badges.css";
+
+/* Tables */
+@import "./components/tables.css";
+
+/* Modal / dialog */
+@import "./components/modal.css";
+
+
+/* =========================================================
+   6. PAGES
+   ========================================================= */
+
+/* Public pages */
+@import "./pages/home.css";
+@import "./pages/courses.css";
+@import "./pages/course-details.css";
+@import "./pages/pricing.css";
+@import "./pages/auth.css";
+
+
+/* ---------------------------------------------------------
+   STUDENT
+   --------------------------------------------------------- */
+
+@import "./pages/student/dashboard.css";
+@import "./pages/student/my-learning.css";
+@import "./pages/student/course-player.css";
+@import "./pages/student/progress.css";
+@import "./pages/student/certificates.css";
+@import "./pages/student/wishlist.css";
+@import "./pages/student/profile.css";
+@import "./pages/student/settings.css";
+
+
+/* ---------------------------------------------------------
+   INSTRUCTOR
+   --------------------------------------------------------- */
+
+@import "./pages/instructor/dashboard.css";
+@import "./pages/instructor/courses.css";
+@import "./pages/instructor/course-editor.css";
+@import "./pages/instructor/students.css";
+@import "./pages/instructor/analytics.css";
+@import "./pages/instructor/earnings.css";
+@import "./pages/instructor/profile.css";
+@import "./pages/instructor/settings.css";
+
+
+/* ---------------------------------------------------------
+   ADMIN
+   --------------------------------------------------------- */
+
+@import "./pages/admin/dashboard.css";
+@import "./pages/admin/courses.css";
+@import "./pages/admin/instructors.css";
+@import "./pages/admin/users.css";
+@import "./pages/admin/finance.css";
+@import "./pages/admin/reports.css";
+@import "./pages/admin/settings.css";
+
+
+/* =========================================================
+   7. RESPONSIVE
+   ========================================================= */
+
+@import "./responsive/desktop.css";
+@import "./responsive/tablet.css";
+@import "./responsive/mobile.css";

@@ -1,0 +1,83 @@
+/* =========================================================
+   SUDEN DESIGN VARIABLES
+   File: css/variables/variables.css
+   Purpose: Central entry point for the SUDEN design system.
+            Specialised tokens remain in their own files.
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Import Design Tokens
+   --------------------------------------------------------- */
+
+@import url("./colors.css");
+@import url("./spacing.css");
+@import url("./typography.css");
+
+
+/* ---------------------------------------------------------
+   Global System Variables
+   --------------------------------------------------------- */
+
+:root {
+
+  /* Layout
+     ----------------------------------------------------- */
+
+  --container-max-width: 1200px;
+  --container-padding: 1.25rem;
+
+  --header-height: 72px;
+  --mobile-header-height: 64px;
+
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 72px;
+
+
+  /* Borders
+     ----------------------------------------------------- */
+
+  --border-width: 1px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-full: 9999px;
+
+
+  /* Shadows
+     ----------------------------------------------------- */
+
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.08);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.10);
+  --shadow-lg: 0 10px 30px rgb(0 0 0 / 0.12);
+  --shadow-xl: 0 20px 50px rgb(0 0 0 / 0.15);
+
+
+  /* Layering
+     ----------------------------------------------------- */
+
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+
+
+  /* Transitions
+     ----------------------------------------------------- */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+
+  /* Focus
+     ----------------------------------------------------- */
+
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+}

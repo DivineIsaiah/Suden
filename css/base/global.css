@@ -1,0 +1,84 @@
+/* =========================================================
+   SUDEN — GLOBAL TYPOGRAPHY
+   =========================================================
+
+   Defines the default typographic behaviour of HTML
+   elements across the application.
+
+   Component and page styles may override these defaults
+   when a specific context requires different typography.
+   ========================================================= */
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-r);
+    line-height: var(--lh-normal);
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: hsl(var(--text));
+    font-weight: var(--fw-s);
+    line-height: var(--lh-tight);
+}
+
+
+/* =========================================================
+   HEADING SCALE
+   ========================================================= */
+
+h1 {
+    font-size: var(--fs-5xl);
+}
+
+h2 {
+    font-size: var(--fs-4xl);
+}
+
+h3 {
+    font-size: var(--fs-3xl);
+}
+
+h4 {
+    font-size: var(--fs-2xl);
+}
+
+h5 {
+    font-size: var(--fs-xl);
+}
+
+h6 {
+    font-size: var(--fs-lg);
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+
+p {
+    line-height: var(--lh-relaxed);
+}
+
+
+/* =========================================================
+   SMALL TEXT
+   ========================================================= */
+
+small {
+    font-size: var(--fs-sm);
+}

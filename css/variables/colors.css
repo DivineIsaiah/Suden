@@ -42,11 +42,6 @@
        RED — Primary Brand
        -----------------------------------------------------
 
-       Represents:
-       • Power
-       • Authority
-       • Confidence
-       • Action
 
        Use for:
        • Primary buttons
@@ -55,11 +50,7 @@
        • Selected states
        • Important interactions
        • Brand elements
-       • SUDEN logo text
-
-       Primary:
-       hsl(0 97% 30%)
-       ----------------------------------------------------- */
+       • SUDEN logo text */
 
     --red: 0 97% 30%;
 

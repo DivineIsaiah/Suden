@@ -1,0 +1,6 @@
+.course-card{
+    padding: var(--space-4);
+    border-radius: var(--radius-card);
+    border: 1px solid hsl(var(--bd)/0.9);
+    background-color: hsl(var(--bg)/0.5);
+}

@@ -1,0 +1,73 @@
+.public-nav{
+    display: flex;
+    padding: var(--nav-item-padding-y) var(--nav-item-padding-x);
+    border: 1px solid hsl(var(--bd-rd)/0.3);
+    border-radius: var(--radius-card);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-bx{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-txt{
+    font-family: var(--font);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-b);
+}
+
+.search-bx{
+    display: flex;
+    gap: var(--space-3);
+    flex: 1 1 clamp(250px, 35vw, 500px);
+    min-width: 250px;
+    max-width: 500px;
+    align-items: center;
+    padding: var(--space-2);
+
+    border: 1px solid hsl(var(--bd));
+    border-radius: var(--radius-card);
+
+}
+
+.nav-srch{
+    min-width: 0;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.nav-srch::placeholder{
+    color: hsl(var(--text-d)/0.5);
+    font-family: var(--font);
+}
+
+.srch-btn{
+    width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: var(--space-2);
+
+}
+
+.srch-icon{
+    max-width: 28%;
+
+}
+
+.srch-btn:hover{
+    width: 32%;
+
+}
+
+.srch-icon{
+    width: 50%;
+}
+
+

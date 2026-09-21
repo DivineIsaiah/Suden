@@ -1,0 +1,4 @@
+.public-head{
+    padding-top: var(--card-padding-md);
+    padding-inline: var(--space-8);
+}

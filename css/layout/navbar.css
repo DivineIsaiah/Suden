@@ -1,7 +1,7 @@
 .public-nav{
     display: flex;
     padding: var(--nav-item-padding-y) var(--nav-item-padding-x);
-    border: 1px solid hsl(var(--bd-rd));
+    border: 1px solid hsl(var(--bd-rd)/0.3);
     border-radius: var(--radius-card);
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,7 @@
     min-width: 250px;
     max-width: 500px;
     align-items: center;
+    padding: var(--space-2);
 
     border: 1px solid hsl(var(--bd));
     border-radius: var(--radius-card);
@@ -48,6 +49,21 @@
 
 .srch-btn{
     width: 29%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: var(--space-2);
+
+}
+
+.srch-icon{
+    max-width: 28%;
+
+}
+
+.srch-btn:hover{
+    width: 32%;
+
 }
 
 .srch-icon{

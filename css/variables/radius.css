@@ -6,4 +6,14 @@
     --radius-xl: 16px;
     --radius-2xl: 24px;
     --radius-full: 9999px;
+
+    /* Semantic Border Radius */
+
+  --radius-button: var(--radius-md);
+  --radius-input: var(--radius-md);
+  --radius-card: var(--radius-lg);
+  --radius-modal: var(--radius-xl);
+  --radius-badge: var(--radius-full);
+  --radius-avatar: var(--radius-full);
+  --radius-image: var(--radius-lg);
 }

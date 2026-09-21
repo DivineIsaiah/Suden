@@ -1,0 +1,20 @@
+/* buttons */
+
+button, a{
+    display: inline-block;
+    padding: var(--space-2) var(--space-4);
+    font-family: var(--font);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-s);
+    text-align: center;
+    text-decoration: none;
+    color: hsl(var(--txt-w));
+    background-color: hsl(var(--red));
+    border: none;
+    border-radius: var(--radius-button);
+    cursor: pointer;
+    transition: all  var(--transition-fast);
+}
+
+/* links */
+

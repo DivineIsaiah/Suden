@@ -16,8 +16,14 @@ button, a{
     transition: all  var(--transition-fast);
 }
 
-button:hover{
+button:hover {
     background-color: hsl(var(--red)/0.7);
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: var(--focus-ring-width) solid hsl(var(--red));
+    outline-offset: var(--focus-ring-offset);
 }
 
 /* links */
@@ -31,22 +37,46 @@ button:hover{
     gap: var(--space-3);
 }
 
-.sub-btn{
-    display: flex;
-    gap: var(--space-4);
-    align-items: center;
-    background: none;
-    color: hsl(var(--red));
-    transition: all var(--transition-fast);
-
+.lgn-btn {
+    color: hsl(var(--txt));
+    background-color: transparent;
 }
 
-.fuel-img{
-    width: var(--space-3);
+.lgn-btn:hover {
+    color: hsl(var(--red));
+    background-color: hsl(var(--red) / 0.08);
+}
 
+.sub-btn{
+    display: inline-flex;
+    gap: var(--space-2);
+    align-items: center;
+    background-color: hsl(var(--red));
+    color: hsl(var(--txt-w));
 }
 
 .sub-btn:hover{
-    color: hsl(var(--txt-w));
+    background-color: hsl(var(--red) / 0.82);
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--space-12);
+    padding-inline: var(--space-6);
+    font-size: var(--fs-md);
+    font-weight: var(--fw-s);
     background-color: hsl(var(--red));
+    color: hsl(var(--txt-w));
+    transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hero-cta:hover {
+    background-color: hsl(var(--red) / 0.86);
+    box-shadow: 0 var(--space-2) var(--space-4) hsl(var(--red) / 0.16);
+}
+
+.hero-cta:active {
+    transform: translateY(1px);
 }

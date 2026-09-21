@@ -1,6 +1,23 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
 
+  .public-head,
+  .hero-section {
+    width: calc(100% - (var(--space-6) * 2));
+  }
+
+  .public-nav {
+    gap: var(--nav-gap-md);
+  }
+
+  .search-bx {
+    min-width: 0;
+  }
+
+  .hero-content h1 {
+    font-size: var(--fs-5xl);
+  }
+
   .container {
     width: 100%;
     padding-inline: var(--space-6);

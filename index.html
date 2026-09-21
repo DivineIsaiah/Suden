@@ -21,28 +21,33 @@
     <header class="public-head">
         <nav class="public-nav">
             <div class="logo-bx">
-                <p class="logo-txt">SUDEN</p>
+                <a class="logo-txt" href="./index.html" aria-label="SUDEN home">SUDEN</a>
             </div>
 
             <div class="search-bx">
-                <input type="text" class="nav-srch" placeholder="Search for courses, topics, and more...">
-                <button class="srch-btn">
-                    <img class="srch-icon" src="./assets/icons/srch-icn-wht.svg" alt="">
+                
+                <input type="search" class="nav-srch" placeholder="Search for courses, topics, and more..." aria-label="Search courses, topics, and more">
+                <button class="srch-btn" type="submit" aria-label="Search">
+                    <img class="srch-icon" src="./assets/icons/ui/srch-icn-wht.svg" alt="">
                 </button>
                 
             </div>
 
             <div class="act-bx">
                 <a class="lgn-btn" href="./pages/public/login.html">Login</a>
-                <a class="sub-btn" href="./pages/public/pricing.html">
-                    <img class="fuel-img" src="" alt="">
-                    SUDEN Fuel
-                </a>
+                <a class="sub-btn" href="./pages/public/pricing.html">SUDEN Fuel</a>
             </div>
         </nav>
     </header>
     
-    <main></main>
+    <main>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Learn <span class="hero-accent">Software Engineering</span><br>To Build Real Things.</h1>
+                <a class="hero-cta" href="./pages/public/courses.html">Explore Courses</a>
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
     

@@ -1,0 +1,29 @@
+.hero-section {
+	display: flex;
+	align-items: center;
+	width: min(calc(100% - (var(--space-8) * 2)), var(--container-max-width));
+	margin-inline: auto;
+	min-height: min(42rem, calc(100vh - var(--header-height) - var(--space-8)));
+	padding-block: var(--section-padding-y-lg);
+}
+
+.hero-content {
+	width: 100%;
+}
+
+.hero-content h1 {
+	max-width: 20ch;
+	color: hsl(var(--txt));
+	font-size: var(--fs-6xl);
+	font-weight: var(--fw-b);
+	line-height: var(--lh-tight);
+	letter-spacing: -0.02em;
+}
+
+.hero-accent {
+	color: hsl(var(--red));
+}
+
+.hero-cta {
+	margin-top: var(--space-8);
+}

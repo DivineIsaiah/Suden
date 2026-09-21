@@ -1,6 +1,48 @@
 
 @media (max-width: 767px) {
 
+  .public-head,
+  .hero-section {
+    width: calc(100% - (var(--space-4) * 2));
+  }
+
+  .public-nav {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    padding: var(--space-3);
+  }
+
+  .search-bx {
+    order: 3;
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  .act-bx {
+    gap: var(--space-1);
+  }
+
+  .act-bx a {
+    padding-inline: var(--space-3);
+    font-size: var(--fs-sm);
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding-block: var(--section-padding-y-md);
+  }
+
+  .hero-content h1 {
+    max-width: 15ch;
+    font-size: var(--fs-3xl);
+    letter-spacing: 0;
+  }
+
+  .hero-cta {
+    margin-top: var(--space-6);
+    min-height: var(--space-11);
+  }
+
   .container {
     width: 100%;
     padding-inline: var(--space-4);

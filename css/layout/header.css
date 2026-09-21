@@ -1,0 +1,4 @@
+.public-head{
+    padding-top: var(--section-padding-y-lg);
+    padding-inline: var(--space-8)
+}

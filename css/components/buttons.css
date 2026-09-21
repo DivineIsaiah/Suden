@@ -16,5 +16,37 @@ button, a{
     transition: all  var(--transition-fast);
 }
 
+button:hover{
+    background-color: hsl(var(--red)/0.7);
+}
+
 /* links */
 
+
+/* Nav Links */
+.act-bx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+}
+
+.sub-btn{
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+    background: none;
+    color: hsl(var(--red));
+    transition: all var(--transition-fast);
+
+}
+
+.fuel-img{
+    width: var(--space-3);
+
+}
+
+.sub-btn:hover{
+    color: hsl(var(--txt-w));
+    background-color: hsl(var(--red));
+}

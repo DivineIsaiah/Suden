@@ -1,6 +1,106 @@
-.course-card{
-    padding: var(--space-4);
+.course-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: var(--card-padding-md);
+    overflow: hidden;
+    border: 1px solid hsl(var(--gold) / 0.6);
     border-radius: var(--radius-card);
-    border: 1px solid hsl(var(--bd)/0.9);
-    background-color: hsl(var(--bg)/0.5);
+    background-color: hsl(var(--gold) );
+    color: hsl(var(--black));
+    transition: background-color var(--transition-hover), border-color var(--transition-hover);
+}
+
+.course-card-img-bx {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: var(--radius-card);
+}
+
+.course-card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-card-deats-bx {
+    flex: 1;
+    border-radius: var(--radius-card);
+    /* background-color: hsl(var(--white)); */
+    transition: background-color var(--transition-hover);
+}
+
+.course-card:hover {
+    border-color: hsl(var(--red));
+    background-color: hsl(var(--white)/0.01);
+}
+
+.course-card:hover .course-card-deats-bx {
+    background-color: hsl(var(--white));
+}
+
+.course-card:hover .course-card-deats{
+    background-color: hsl(var(--red)/0.8);
+}
+
+.course-card-title {
+    text-align: center;
+    margin: 0;
+    color: hsl(var(--black));
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-s);
+    line-height: var(--lh-snug);
+}
+
+.course-card-deats {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+    padding: var(--space-3);
+    background-color: hsl(var(--white));
+    border-radius: var(--radius-sm);
+}
+
+.course-card-deats > div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.course-card-deats svg {
+    display: block;
+    width: var(--space-5);
+    height: var(--space-5);
+    fill: hsl(var(--red));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.chapters svg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23b00000' d='M5 4h14v16H5V4Zm2 2v2h10V6H7Zm0 4v2h10v-2H7Zm0 4v2h7v-2H7Z'/%3E%3C/svg%3E");
+}
+
+.duration svg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23b00000' d='M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9Zm1 5v3.6l2.4 1.4-1 1.7-3.4-2V8h2Z'/%3E%3C/svg%3E");
+}
+
+.level svg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23b00000' d='m12 3 8 4v5c0 4.4-3.4 7.9-8 9-4.6-1.1-8-4.6-8-9V7l8-4Zm0 3.1L6 9v3c0 3.1 2.2 5.7 6 6.8 3.8-1.1 6-3.7 6-6.8V9l-6-2.9Z'/%3E%3C/svg%3E");
+}
+
+.course-card-deats p {
+    margin: 0;
+    color: hsl(var(--black));
+    font-size: var(--fs-xs);
+    line-height: var(--lh-snug);
+}
+
+.course-card-deats p:last-child {
+    color: hsl(var(--black));
+    font-weight: var(--fw-s);
+    text-align: right;
 }

@@ -2,8 +2,8 @@
     display: flex;
     gap: var(--nav-gap-lg);
    
-    padding: var(--space-2);
-    border: 1px solid hsl(var(--bd-rd) / 0.3);
+    padding: var(--space-2) var(--space-6);
+    border: 1px solid hsl(var(--bd-rd) / 0.1);
     border-radius: var(--radius-card);
     justify-content: space-between;
     align-items: center;
@@ -30,6 +30,24 @@
     transition: color var(--transition-fast);
 }
 
+.logo-txt span:nth-child(odd) {
+    color: hsl(var(--red));
+    transition: color var(--transition-fast);
+}
+
+.logo-txt span:nth-child(even) {
+    color: hsl(var(--gold));
+    transition: color var(--transition-fast);
+}
+
+.logo-txt:hover span:nth-child(odd) {
+    color: hsl(var(--red) / 0.78);
+}
+
+.logo-txt:hover span:nth-child(even) {
+    color: hsl(var(--gold) / 0.78);
+}
+
 .logo-txt:hover {
     color: hsl(var(--red));
     background-color: transparent;
@@ -42,10 +60,10 @@
     min-width: 250px;
     max-width: 500px;
     align-items: center;
-    padding: var(--space-1) var(--space-2) var(--space-1) var(--space-3);
+    padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3);
     border: 1px solid hsl(var(--bd));
     border-radius: var(--radius-input);
-    background-color: hsl(var(--white));
+    background-color: hsl(var(--black) / 0.05);
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
@@ -64,25 +82,19 @@
 }
 
 .nav-srch::placeholder {
-    color: hsl(var(--text-d) / 0.5);
+    color: hsl(var(--black) / 0.4 );
     font-family: var(--font);
 }
 
 .srch-btn {
     display: flex;
-    flex: 0 0 12%rem;
-    width: 12%;
-    
+    width: var(--space-7);
     align-items: center;
     justify-content: center;
-    padding: var(--space-2);
+    padding: calc(var(--space-1) - 1rem);
     border-radius: var(--radius-sm);
-    background-color: hsl(var(--red));
-    transition: background-color var(--transition-fast), transform var(--transition-fast);
-}
-
-.srch-btn:hover {
-    background-color: hsl(var(--red) / 0.82);
+    background-color: hsl(var(--red)/0);
+    transition: all var(--transition-fast), transform var(--transition-fast);
 }
 
 .srch-btn:active {
@@ -90,7 +102,7 @@
 }
 
 .srch-icon {
-    height: var(--space-5);
-    width: var(--space-5);
+    height: 100%;
+    width: 100%;
 }
 

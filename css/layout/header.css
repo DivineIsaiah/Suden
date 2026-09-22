@@ -1,5 +1,8 @@
 .public-head {
-    width: min(calc(100% - (var(--space-8) * 2)), var(--container-max-width));
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    width: min(calc(100% - (var(--space-4) * 2)), var(--container-max-width));
     margin-inline: auto;
     padding-top: var(--space-4);
 }

@@ -86,6 +86,14 @@
 	letter-spacing: -0.02em;
 }
 
+.hero-main{
+	color: hsl(var(--green));
+}
+
+.hero-alt{
+	color: hsl(var(--gold));
+}
+
 .hero-accent {
 	color: hsl(var(--red));
 }

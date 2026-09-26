@@ -1,0 +1,184 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+#site-footer {
+    background-color: hsl(var(--black));
+    color: hsl(var(--txt-w-m));
+    padding: var(--space-16) var(--page-padding-x) var(--space-8);
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* --- brand block --- */
+
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-2);
+}
+
+/* scoped override so the logo reads correctly on this dark background,
+   remove if your existing .logo-txt already handles dark contexts */
+#site-footer .logo-txt span {
+    color: hsl(var(--txt-w));
+}
+
+.footer__tagline {
+    margin: 0;
+    color: hsl(var(--txt-w));
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-b);
+}
+
+
+/* --- columns --- */
+
+.footer__columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--section-gap-md);
+    margin-top: var(--space-16);
+}
+
+.footer__col-title {
+    margin: 0;
+    margin-bottom: var(--space-5);
+    color: hsl(var(--txt-w));
+    font-size: var(--fs-md);
+    font-weight: var(--fw-b);
+}
+
+.footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.footer__list a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: hsl(var(--txt-w-m));
+    font-size: var(--fs-sm);
+    text-decoration: none;
+    transition: color var(--transition-hover);
+}
+
+.footer__list a:hover {
+    color: hsl(var(--txt-w));
+}
+
+.footer__badge {
+    padding: var(--space-1) var(--space-2);
+    background-color: hsl(var(--gold));
+    color: hsl(var(--black));
+    font-size: 0.65rem;
+    font-weight: var(--fw-b);
+    letter-spacing: 0.02em;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+}
+
+
+/* --- contact list --- */
+
+.footer__contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.footer__contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    color: hsl(var(--txt-w-m));
+    font-size: var(--fs-sm);
+    line-height: var(--lh-snug);
+}
+
+.footer__contact-icon {
+    flex-shrink: 0;
+    width: var(--space-5);
+    height: var(--space-5);
+    margin-top: 0.1em; /* nudges icon to align with first line of text */
+    color: hsl(var(--txt-w));
+}
+
+
+/* --- social + play store column --- */
+
+.footer__col--social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.footer__social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--space-10);
+    height: var(--space-10);
+    background-color: hsl(0 0% 15%);
+    border-radius: var(--radius-md);
+    color: hsl(var(--txt-w));
+    transition: background-color var(--transition-hover);
+}
+
+.footer__social-icon:hover {
+    background-color: hsl(0 0% 22%);
+}
+
+.footer__social-icon svg {
+    width: var(--space-5);
+    height: var(--space-5);
+    fill: hsl(var(--txt-w));
+}
+
+.footer__playstore {
+    display: inline-block;
+    margin-top: var(--space-6);
+}
+
+.footer__playstore-img {
+    display: block;
+    height: var(--space-12);
+    width: auto;
+}
+
+
+/* --- divider + copyright --- */
+
+.footer__divider {
+    margin-top: var(--space-16);
+    border: none;
+    border-top: 1px solid hsl(0 0% 22%);
+}
+
+.footer__copyright {
+    margin: 0;
+    margin-top: var(--space-6);
+    text-align: center;
+    color: hsl(var(--txt-w-l));
+    font-size: var(--fs-sm);
+}

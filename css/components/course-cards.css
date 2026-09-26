@@ -1,47 +1,41 @@
+/* =========================================================
+   COURSE CARD — WRAPPER (positioning context)
+   ========================================================= */
+
+.course-card-wrap {
+    position: relative;
+}
+
+
+/* =========================================================
+   COURSE CARD — BASE (always visible)
+   ========================================================= */
+
 .course-card {
+    position: relative;
     display: flex;
     flex-direction: column;
+    flex: 0 0;
     min-width: 0;
-    padding: var(--card-padding-md);
+    padding: var(--card-padding-sm);
     overflow: hidden;
     border: 1px solid hsl(var(--gold) / 0.6);
     border-radius: var(--radius-card);
-    background-color: hsl(var(--gold) );
+    background-color: hsl(var(--turq) / 0.6);
     color: hsl(var(--black));
-    transition: background-color var(--transition-hover), border-color var(--transition-hover);
+    transition: opacity var(--transition-hover);
 }
 
-.course-card-img-bx {
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    border-radius: var(--radius-card);
-}
-
-.course-card-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.course-card-wrap:hover .course-card {
+    opacity: 0; /* base card fades out so only the hover card reads on top */
 }
 
 .course-card-deats-bx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     flex: 1;
     border-radius: var(--radius-card);
-    /* background-color: hsl(var(--white)); */
-    transition: background-color var(--transition-hover);
-}
-
-.course-card:hover {
-    border-color: hsl(var(--red));
-    background-color: hsl(var(--white)/0.01);
-}
-
-.course-card:hover .course-card-deats-bx {
-    background-color: hsl(var(--white));
-}
-
-.course-card:hover .course-card-deats{
-    background-color: hsl(var(--red)/0.8);
 }
 
 .course-card-title {
@@ -59,7 +53,7 @@
     margin-top: var(--space-5);
     padding: var(--space-3);
     background-color: hsl(var(--white));
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
 }
 
 .course-card-deats > div {
@@ -74,7 +68,6 @@
     display: block;
     width: var(--space-5);
     height: var(--space-5);
-    fill: hsl(var(--red));
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -104,3 +97,224 @@
     font-weight: var(--fw-s);
     text-align: right;
 }
+
+
+/* =========================================================
+   COURSE CARD — HOVER OVERLAY
+   Sits exactly over the base card, same width, then extends
+   downward for the extra content. Hidden until wrap is hovered.
+   ========================================================= */
+
+.course-card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(var(--white));
+    border: 1px solid hsl(var(--red) / 0.35);
+    border-radius: var(--radius-card);
+    box-shadow: 0 var(--space-3) var(--space-8) hsl(var(--black) / 0.18);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity var(--transition-hover),
+                transform var(--transition-hover),
+                visibility var(--transition-hover);
+    z-index: 20;
+    pointer-events: none;
+}
+
+.course-card-wrap:hover .course-card-hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+/* --- media block (thumbnail, close, play) --- */
+
+.course-card-hover-media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background-color: hsl(var(--black));
+    overflow: hidden;
+}
+
+.course-card-hover-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-card-hover-close {
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--space-8);
+    height: var(--space-8);
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-full);
+    background-color: hsl(var(--white));
+    color: hsl(var(--black));
+    font-size: var(--fs-lg);
+    line-height: 1;
+    cursor: pointer;
+}
+
+.course-card-hover-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--space-14);
+    height: var(--space-14);
+    transform: translate(-50%, -50%);
+    background-color: hsl(var(--red) / 0.9);
+    border-radius: var(--radius-full);
+    pointer-events: none;
+}
+
+.course-card-hover-play::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: var(--space-3) 0 var(--space-3) var(--space-5);
+    border-color: transparent transparent transparent hsl(var(--white));
+}
+
+
+/* --- body block --- */
+
+.course-card-hover-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--card-padding-sm);
+}
+
+.course-card-tag {
+    align-self: flex-start;
+    padding: var(--space-1) var(--space-3);
+    background-color: hsl(var(--red) / 0.1);
+    color: hsl(var(--red));
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-s);
+    border-radius: var(--radius-badge);
+}
+
+.course-card-hover-title {
+    margin: 0;
+    color: hsl(var(--black));
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-b);
+    line-height: var(--lh-snug);
+}
+
+.course-card-provider {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: hsl(var(--txt-l));
+    font-size: var(--fs-xs);
+}
+
+.course-card-provider-avatar {
+    flex-shrink: 0;
+    width: var(--space-6);
+    height: var(--space-6);
+    border-radius: var(--radius-avatar);
+    background-color: hsl(var(--gold));
+}
+
+.course-card-provider-name {
+    color: hsl(var(--txt));
+    font-weight: var(--fw-m);
+}
+
+.course-card-provider-dot {
+    color: hsl(var(--txt-l));
+}
+
+.course-card-avatars {
+    display: flex;
+}
+
+.avatar-dot {
+    width: var(--space-5);
+    height: var(--space-5);
+    border-radius: var(--radius-avatar);
+    background-color: hsl(var(--gold));
+    border: 2px solid hsl(var(--white));
+    margin-left: calc(var(--space-2) * -1);
+}
+
+.avatar-dot:first-child {
+    margin-left: 0;
+}
+
+.course-card-learners {
+    white-space: nowrap;
+}
+
+.course-card-hover-deats {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-2);
+    padding: var(--space-3);
+    background-color: hsl(0 0% 96%);
+    border-radius: var(--radius-md);
+}
+
+.course-card-hover-deats > div {
+    flex: 1;
+}
+
+.course-card-hover-deats p {
+    margin: 0;
+    color: hsl(var(--txt-l));
+    font-size: var(--fs-xs);
+    line-height: var(--lh-snug);
+}
+
+.course-card-hover-deats p:last-child {
+    margin-top: var(--space-1);
+    color: hsl(var(--black));
+    font-weight: var(--fw-s);
+    font-size: var(--fs-sm);
+}
+
+.course-card-cta {
+    display: block;
+    text-align: center;
+    margin-top: var(--space-2);
+    padding: var(--space-3);
+    background-color: hsl(var(--white));
+    color: hsl(var(--red));
+    border: 1px solid hsl(var(--red));
+    font-weight: var(--fw-s);
+    font-size: var(--fs-sm);
+    text-decoration: none;
+    border-radius: var(--radius-button);
+    transition: background-color var(--transition-hover), color var(--transition-hover);
+}
+
+.course-card-cta:hover {
+    background-color: hsl(var(--red));
+    color: hsl(var(--white));
+}
+
+
+

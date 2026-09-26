@@ -1,0 +1,271 @@
+/* LEARNIG PATH SECTION */
+
+
+/* =========================================================
+   LEARNING PATHS SECTION
+   ========================================================= */
+
+#learning-paths {
+    padding: var(--section-padding-y-lg) var(--page-padding-x);
+}
+
+.learning-paths-hd{
+    text-align: center;
+    margin-bottom: var(--space-10)
+}
+
+.learning-paths__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--card-gap-lg);
+}
+
+
+/* =========================================================
+   PATH CARD
+   ========================================================= */
+
+.path-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--card-padding-lg);
+    border: 1px solid hsl(var(--gold) / 0.6);
+    border-radius: var(--radius-card);
+    background-color: hsl(var(--white));
+    transition: border-color var(--transition-hover),
+                box-shadow var(--transition-hover),
+                transform var(--transition-hover);
+}
+
+.path-card:hover {
+    border-color: hsl(var(--red));
+    box-shadow: 0 var(--space-2) var(--space-6) hsl(var(--black) / 0.12);
+    transform: translateY(-4px);
+}
+
+
+/* --- icon --- */
+
+.path-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-5);
+    border-radius: var(--radius-full);
+    background-color: hsl(var(--gold) / 0.15);
+    transition: background-color var(--transition-hover);
+}
+
+.path-card:hover .path-card-icon {
+    background-color: hsl(var(--gold));
+}
+
+.path-card-icon svg {
+    display: block;
+    width: var(--space-10);
+    height: var(--space-10);
+    fill: hsl(var(--red));
+}
+
+
+/* --- title --- */
+
+.path-card-title {
+    margin: 0;
+    margin-top: var(--space-5);
+    color: hsl(var(--black));
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-s);
+    line-height: var(--lh-snug);
+}
+
+
+/* --- tags --- */
+
+.path-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+}
+
+.path-card-tag {
+    padding: var(--space-1) var(--space-3);
+    background-color: hsl(var(--gold) / 0.1);
+    color: hsl(var(--txt-m));
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-m);
+    border-radius: var(--radius-badge);
+}
+
+
+/* --- button --- */
+
+.path-card-btn {
+    display: block;
+    width: 100%;
+    margin-top: var(--space-6);
+    padding: var(--space-3);
+    background-color: hsl(var(--red));
+    color: hsl(var(--white));
+    font-weight: var(--fw-s);
+    font-size: var(--fs-sm);
+    text-align: center;
+    text-decoration: none;
+    border-radius: var(--radius-button);
+    transition: background-color var(--transition-hover);
+}
+
+.path-card-btn:hover {
+    background-color: hsl(var(--red) / 0.85);
+}
+
+
+
+
+/* =========================================================
+   INSTRUCTORS SECTION
+   ========================================================= */
+
+#instructors {
+    padding: var(--section-padding-y-lg) var(--page-padding-x);
+    overflow: hidden; /* keeps the scrolling track from causing page-wide horizontal scroll */
+}
+
+.instructors__head {
+    margin: 0;
+    color: hsl(var(--black));
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-b);
+    line-height: var(--lh-tight);
+}
+
+.instructors__subhead {
+    margin: 0;
+    margin-top: var(--space-2);
+    color: hsl(var(--txt-l));
+    font-size: var(--fs-md);
+    line-height: var(--lh-normal);
+}
+
+
+/* --- scroll wrapper + nav button --- */
+
+.instructors__scroll-wrap {
+    position: relative;
+    margin-top: var(--space-8);
+}
+
+.instructors__track {
+    display: flex;
+    gap: var(--card-gap-md);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: var(--space-2); /* room so a scrollbar, if visible, doesn't touch the cards */
+
+    /* hide scrollbar visually while keeping it scrollable */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.instructors__track::-webkit-scrollbar {
+    display: none;
+}
+
+.instructors__nav {
+    position: absolute;
+    top: 35%; /* roughly centers on the photo block, not the whole card */
+    right: var(--space-4);
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--space-10);
+    height: var(--space-10);
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-full);
+    background-color: hsl(var(--white));
+    box-shadow: 0 var(--space-1) var(--space-4) hsl(var(--black) / 0.2);
+    color: hsl(var(--black));
+    cursor: pointer;
+    z-index: 5;
+}
+
+.instructors__nav svg {
+    width: var(--space-5);
+    height: var(--space-5);
+}
+
+
+/* =========================================================
+   INSTRUCTOR CARD
+   ========================================================= */
+
+.instructor-card {
+    flex: 0 0 auto;
+    width: 15rem;
+    scroll-snap-align: start;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: transparent;
+    border: 1px solid hsl(var(--black)/0.2);
+}
+
+.instructor-card-img-bx {
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-card);
+    background-color: var(--card-bg, hsl(var(--gold)));
+    overflow: hidden;
+}
+
+.instructor-card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* keeps faces from being cropped awkwardly */
+}
+
+.instructor-card-name {
+    margin: 0;
+    margin-top: var(--space-3);
+    color: hsl(var(--black));
+    font-size: var(--fs-md);
+    font-weight: var(--fw-s);
+}
+
+.instructor-card-tags {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.instructor-card-dept {
+    padding: var(--space-1) var(--space-2);
+    background-color: hsl(var(--gold) / 0.15);
+    color: hsl(var(--txt-m));
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-m);
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+}
+
+.instructor-card-dot {
+    color: hsl(var(--txt-l));
+    font-size: var(--fs-xs);
+}
+
+.instructor-card-courses {
+    color: hsl(var(--txt-m));
+    font-size: var(--fs-xs);
+    white-space: nowrap;
+}

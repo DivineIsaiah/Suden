@@ -246,3 +246,110 @@
 .course-card {
 	min-height: var(--space-22);
 }
+
+
+
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
+
+#contact {
+    padding: var(--section-padding-y-lg) var(--page-padding-x);
+}
+
+.contact__wrapper{
+	background-color: hsl(var(--gold)/0.8);
+	border-radius: var(--radius-lg);
+	padding: var(--space-8);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.contact__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--section-gap-lg);
+    padding: var(--space-16) var(--space-16) 0; /* no bottom padding — illustration bleeds off the edge */
+    background-color: hsl(var(--gold) );
+    border-radius: var(--radius-2xl);
+    overflow: hidden; /* clips the illustration + decorative circles to the card's rounded corners */
+}
+
+
+/* --- left: text content --- */
+
+.contact__content {
+	padding: var(--space-10) var(--space-20);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: var(--space-4);
+    flex: 1 1 28rem;
+    max-width: 32rem;
+    z-index: 2;
+}
+
+.contact__head {
+    margin: 0;
+    color: hsl(var(--gold));
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-b);
+    line-height: var(--lh-tight);
+}
+
+.contact__text {
+    margin: 0;
+    margin-top: var(--space-4);
+    color: hsl(var(--txt-m));
+    font-size: var(--fs-md);
+    line-height: var(--lh-relaxed);
+}
+
+.contact__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-6);
+    padding: var(--space-3) var(--space-6);
+    background-color: hsl(var(--white));
+    color: hsl(var(--gold));
+    border: 1px solid hsl(var(--gold));
+    font-weight: var(--fw-m);
+    font-size: var(--fs-sm);
+    text-decoration: none;
+    border-radius: var(--radius-button);
+    transition: background-color var(--transition-hover);
+}
+
+.contact__btn:hover {
+    background-color: hsl(var(--gold) / 0.1);
+}
+
+.contact__btn-icon {
+    width: var(--space-5);
+    height: var(--space-5);
+    flex-shrink: 0;
+}
+
+
+/* --- right: illustration --- */
+
+.contact__illustration {
+    flex: 1 1 22rem;
+    display: flex;
+    align-items: flex-end; /* pins illustration to the bottom so it bleeds off the card edge */
+    justify-content: center;
+    align-self: flex-end; /* pulls the whole illustration block down against the card's bottom edge */
+    z-index: 1;
+}
+
+.contact__illustration-svg {
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+    display: block;
+}

@@ -182,3 +182,9 @@
     color: hsl(var(--txt-w-l));
     font-size: var(--fs-sm);
 }
+
+@media (max-width: 768px) {
+    .footer__columns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

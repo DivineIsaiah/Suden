@@ -17,6 +17,7 @@
     flex-direction: column;
     flex: 0 0;
     min-width: 0;
+    min-height: var(--space-22);
     padding: var(--card-padding-sm);
     overflow: hidden;
     border: 1px solid hsl(var(--gold) / 0.6);

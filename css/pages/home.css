@@ -7,6 +7,23 @@
 	padding-block: var(--section-padding-y-sm);
 }
 
+.hero-img {
+	position: absolute;
+	top: 3%; /* Fix this later to be more responsive */
+	width: min(calc(100% - (var(--space-8) * 2)), var(--container-max-width)); /* Fix this later to be more responsive */
+	min-height: min(42rem, calc(100vh - var(--header-height) - var(--space-8))); /* Fix this later to be more responsive */
+	z-index: -1; /* ensures the hero image is behind the text content */
+	opacity: 0.25; /* reduces the opacity of the hero image to make the text more readable */
+}
+
+.hero-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+}
+
 .hero-content {
 	width: 100%;
 }
@@ -155,7 +172,7 @@
 
 .course-filter {
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 	gap: var(--space-3);
 	max-width: 100%;
 	margin-top: var(--section-gap-md);
@@ -243,11 +260,53 @@
 	margin-top: var(--space-6);
 }
 
-.course-card {
-	min-height: var(--space-22);
+.course-see-more{
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
+.course-scroll-wrap {
+    position: relative;
+    z-index: 1;
+    margin-top: var(--space-8);
+}
 
+.course-track {
+	display: flex;
+	gap: var(--card-gap-md);
+	position: relative;
+	z-index: 1;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	padding-bottom: var(--space-2);
+	
+    /* hide scrollbar visually while keeping it scrollable */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.learning-path-wrap {
+    position: relative;
+    z-index: 1;
+    margin-top: var(--space-8);
+}
+
+.learning-path-track {
+	display: flex;
+	gap: var(--card-gap-md);
+	position: relative;
+	z-index: 1;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	padding-bottom: var(--space-2);
+	
+    /* hide scrollbar visually while keeping it scrollable */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
 /* =========================================================
    CONTACT SECTION
@@ -283,7 +342,7 @@
 /* --- left: text content --- */
 
 .contact__content {
-	padding: var(--space-10) var(--space-20);
+	padding-left: 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -295,7 +354,7 @@
 
 .contact__head {
     margin: 0;
-    color: hsl(var(--gold));
+    color: hsl(var(--red) / 0.6);
     font-size: var(--fs-4xl);
     font-weight: var(--fw-b);
     line-height: var(--lh-tight);
@@ -326,7 +385,8 @@
 }
 
 .contact__btn:hover {
-    background-color: hsl(var(--gold) / 0.1);
+    background-color: hsl(var(--red));
+	color: hsl(var(--white));
 }
 
 .contact__btn-icon {

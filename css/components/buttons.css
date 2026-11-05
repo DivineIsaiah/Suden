@@ -2,27 +2,26 @@
 
 button, a{
     display: inline-block;
-    padding: var(--space-2) var(--space-4);
-    font-family: var(--font);
+    padding: var(--space-1) var(--space-6);
+    font-family: var(--font-main);
     font-size: var(--fs-md);
     font-weight: var(--fw-s);
     text-align: center;
     text-decoration: none;
     color: hsl(var(--txt-w));
-    background-color: hsl(var(--red));
+    background-color: hsl(var(--yellow));
     border: none;
-    border-radius: var(--radius-button);
     cursor: pointer;
     transition: all  var(--transition-fast);
 }
 
 button:hover {
-    background-color: hsl(var(--red)/0.7);
+    background-color: hsl(var(--yellow)/0.7);
 }
 
 button:focus-visible,
 a:focus-visible {
-    outline: var(--focus-ring-width) solid hsl(var(--red));
+    outline: var(--focus-ring-width) solid hsl(var(--yellow)/0.7);
     outline-offset: var(--focus-ring-offset);
 }
 
@@ -38,25 +37,29 @@ a:focus-visible {
 }
 
 .lgn-btn {
-    color: hsl(var(--txt));
+    color: hsl(var(--white));
+    font-weight: var(--fw-m);
     background-color: transparent;
+    border: 1px solid hsl(var(--white) / 0.3);
+    outline: none;
 }
 
 .lgn-btn:hover {
-    color: hsl(var(--red));
-    background-color: hsl(var(--red) / 0.08);
+    border-color: hsl(var(--white) / 0.9);
+    /* outline: var(--focus-ring-width) solid hsl(var(--white) / 0.7); */
+   
 }
 
 .sub-btn{
     display: inline-flex;
     gap: var(--space-2);
     align-items: center;
-    background-color: hsl(var(--red));
-    color: hsl(var(--txt-w));
+    background-color: hsl(var(--yellow));
+    color: hsl(var(--deep-black));
 }
 
 .sub-btn:hover{
-    background-color: hsl(var(--red) / 0.82);
+    background-color: hsl(var(--white) );
 }
 
 .hero-cta {

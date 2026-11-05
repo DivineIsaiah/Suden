@@ -87,15 +87,16 @@
 }
 
 .hero-main{
-	color: hsl(var(--green));
+	color: hsl(var(--white));
 }
 
 .hero-alt{
-	color: hsl(var(--gold));
+	color: hsl(var(--white));
 }
 
 .hero-accent {
-	color: hsl(var(--red));
+	color: hsl(var(--yellow));
+	font-family: var(--font-main);
 }
 
 .hero-actions {

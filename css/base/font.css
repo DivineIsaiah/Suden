@@ -1,22 +1,15 @@
-/* =========================================================
-   SUDEN — FONT SYSTEM
-   =========================================================
-
-   Primary Font:
-   Lexend
-
-   Lexend is designed for readability and comfortable
-   reading, making it suitable for an educational platform.
-
-   Fallback:
-   sans-serif
-
-   The font is currently loaded through Google Fonts.
-   ========================================================= */
-
+@font-face {
+    font-family: "Departure Mono";
+    src: url("../../assets/fonts/DepartureMono-Regular.woff") format("woff"),
+        url("../../assets/fonts/DepartureMono-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 :root {
     --font: "Lexend", sans-serif;
+    --font-main: "Departure Mono", monospace;
 }
 
 

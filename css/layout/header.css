@@ -2,7 +2,12 @@
     position: sticky;
     top: 0;
     z-index: var(--z-sticky);
-    width: min(calc(100% - (var(--space-4) * 2)), var(--container-max-width));
+    display: grid;
+    place-items: center;
+    width: 100%;
     margin-inline: auto;
-    padding-top: var(--space-4);
+    padding: var(--space-2) var(--space-6);
+    border-bottom: 1px solid hsl(var(--white) / 0.3);
+    background-color: hsl(var(--black)/0.5);
+    backdrop-filter: blur(5px);
 }

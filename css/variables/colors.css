@@ -33,101 +33,13 @@
 
 :root {
 
-    /* =====================================================
-       BRAND
-       ===================================================== */
-
-
-    /* -----------------------------------------------------
-       RED — Primary Brand
-       -----------------------------------------------------
-
-
-       Use for:
-       • Primary buttons
-       • Links
-       • Active navigation
-       • Selected states
-       • Important interactions
-       • Brand elements
-       • SUDEN logo text */
-
     --red: 0 97% 30%;
     --green: 180 97% 30%;
-
-
-    /* -----------------------------------------------------
-       GOLD — Brand Accent
-       -----------------------------------------------------
-
-       Represents:
-       • Wisdom
-       • Excellence
-       • Achievement
-       • Value
-
-       Use SPARINGLY for:
-       • Logo accents
-       • Achievements
-       • Premium indicators
-       • Important statistics
-       • Highlights
-       • Decorative details
-
-       Gold supports the red.
-       It should not compete with the primary brand colour.
-       ----------------------------------------------------- */
-
     --gold: 42 48% 57%;
-
-
-    /* =====================================================
-       FOUNDATION
-       ===================================================== */
-
-
-    /* -----------------------------------------------------
-       WHITE — Light Foundation
-       -----------------------------------------------------
-
-       Represents:
-       • Clarity
-       • Knowledge
-       • Simplicity
-
-       Use for:
-       • Page backgrounds
-       • Cards
-       • Inputs
-       • Navigation
-       • Light surfaces
-       ----------------------------------------------------- */
-
+    --yellow: 51 100% 64%;
     --white: 0 0% 100%;
-
-
-    /* -----------------------------------------------------
-       BLACK — Dark Foundation
-       -----------------------------------------------------
-
-       Represents:
-       • Instruction
-       • Structure
-       • Focus
-       • Depth
-
-       Use for:
-       • Dark page backgrounds
-       • Dark sections
-       • Dark surfaces
-       ----------------------------------------------------- */
-
     --black: 0 0% 4%;
-
-
-    /* =====================================================
-       TEXT
-       ===================================================== */
+    --deep-black: 0 0% 0%;
 
 
     /* -----------------------------------------------------
@@ -163,83 +75,35 @@
 
     /* -----------------------------------------------------
        GREEN — Success
-       -----------------------------------------------------
-
-       Represents:
-       • Success
-       • Completion
-       • Progress
-       • Verification
-       • Positive results
-
-       NOT a brand colour.
-       ----------------------------------------------------- */
+       */
 
     --green: 152 64% 31%;
 
 
     /* -----------------------------------------------------
        AMBER — Warning
-       -----------------------------------------------------
-
-       Represents:
-       • Attention
-       • Caution
-       • Incomplete states
-       • Approaching deadlines
-
-       NOT a brand colour.
-       ----------------------------------------------------- */
+      */
 
     --amber: 32 95% 44%;
 
 
     /* -----------------------------------------------------
        ERROR RED — System Error
-       -----------------------------------------------------
-
-       IMPORTANT:
-       This is NOT the SUDEN brand red.
-
-       Use for:
-       • Validation errors
-       • Failed actions
-       • Destructive states
-       • Critical problems
-
-       Brand red = SUDEN identity.
-       Error red = something went wrong.
-
-       NOT a brand colour.
-       ----------------------------------------------------- */
+       */
 
     --err: 0 72% 51%;
 
 
     /* -----------------------------------------------------
        BLUE — Information
-       -----------------------------------------------------
-
-       Represents:
-       • Information
-       • Tips
-       • Neutral notifications
-       • System messages
-       • Helpful instructional hints
-
-       This is a semantic colour, NOT a brand colour.
-       ----------------------------------------------------- */
+      */
 
     --info: 217 91% 53%;
 
 
-    /* =====================================================
+    /* 
        BORDERS
-       =====================================================
-
-       Neutral borders provide structure without introducing
-       unnecessary colour into the interface.
-       ===================================================== */
+   */
 
     --bd: 0 0% 90%;
     --bd-d: 0 0% 20%;
@@ -248,11 +112,7 @@
 
     /* =====================================================
        THEME SURFACES
-       =====================================================
-
-       These variables make theme usage explicit and keep
-       components from scattering raw colour values.
-       ===================================================== */
+    */
 
 
     /* LIGHT THEME */

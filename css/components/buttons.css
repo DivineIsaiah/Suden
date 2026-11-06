@@ -62,24 +62,153 @@ a:focus-visible {
     background-color: hsl(var(--white) );
 }
 
+
+/* .hero-actions {
+	display: flex;
+	align-items: center;
+	gap: var(--space-6);
+	margin-top: var(--space-8);
+}
+
 .hero-cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     min-height: var(--space-12);
-    padding-inline: var(--space-6);
-    font-size: var(--fs-md);
-    font-weight: var(--fw-s);
-    background-color: hsl(var(--red));
-    color: hsl(var(--txt-w));
+    padding: var(--space-3) var(--space-10);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-b);
+    background-color: hsl(var(--yellow));
+    color: hsl(var(--black));
+    text-transform: uppercase;
     transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .hero-cta:hover {
-    background-color: hsl(var(--red) / 0.86);
-    box-shadow: 0 var(--space-2) var(--space-4) hsl(var(--red) / 0.16);
+    background-color: hsl(var(--white) / 0.86);
+    box-shadow: 0 var(--space-2) var(--space-4) hsl(var(--yellow) / 0.16);
 }
 
 .hero-cta:active {
     transform: translateY(1px);
+}
+
+.hero-cta:hover {
+	transform: translateY(calc(var(--space-1) * -1));
+	box-shadow: none;
+} */
+
+
+
+/* Hero search interaction */
+
+.hero-search-control {
+    display: flex;
+    align-items: center;
+    min-height: var(--space-12);
+    margin-top: var(--space-8)
+}
+
+/* Initial Explore button */
+
+.hero-cta {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--space-12);
+    padding: var(--space-3) var(--space-10);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-b);
+    background-color: hsl(var(--yellow));
+    color: hsl(var(--black));
+    text-transform: uppercase;
+    transition:
+        width 350ms ease,
+        opacity 250ms ease,
+        padding 350ms ease,
+        background-color var(--transition-fast),
+        box-shadow var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.hero-cta:hover {
+	transform: translateY(calc(var(--space-1) * -1));
+	box-shadow: none;
+    background-color: hsl(var(--yellow));
+}
+
+/* Search form */
+
+.hero-search {
+    display: flex;
+    align-items: center;
+    width: 0;
+    height: var(--space-12);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid hsl(var(--yellow));
+    background: hsl(var(--deep-black));
+    transition:
+        width 350ms ease,
+        opacity 250ms ease,
+        visibility 350ms;
+}
+
+/* Search input */
+
+.hero-search input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0 var(--space-4);
+    border: none;
+    outline: none;
+    background: transparent;
+    color: hsl(var(--white));
+    font-family: var(--font-main);
+    font-size: var(--fs-md);
+}
+
+.hero-search input::placeholder {
+    color: hsl(var(--white) / 0.5);
+}
+
+/* Search icon button */
+
+.hero-search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: var(--space-12);
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    color: hsl(var(--yellow));
+    border: none;
+    cursor: pointer;
+}
+
+.hero-search-btn:hover {
+    background: hsl(var(--yellow) / 0.12);
+    color: hsl(var(--yellow));
+}
+
+/* Active search state */
+
+.hero-search-control.is-searching .hero-cta {
+    width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hero-search-control.is-searching .hero-search {
+    width: clamp(260px, 35vw, 420px);
+    opacity: 1;
+    visibility: visible;
 }

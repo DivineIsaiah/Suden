@@ -1,3 +1,5 @@
+
+
 /* =========================================================
    COURSE CARD — WRAPPER (positioning context)
    ========================================================= */
@@ -17,12 +19,13 @@
     flex-direction: column;
     flex: 0 0;
     min-width: 0;
+    min-height: var(--space-22);
     padding: var(--card-padding-sm);
     overflow: hidden;
-    border: 1px solid hsl(var(--gold) / 0.6);
-    border-radius: var(--radius-card);
-    background-color: hsl(var(--turq) / 0.6);
-    color: hsl(var(--black));
+    border: 1px solid hsl(var(--white) / 0.6);
+    border-radius: none;
+    background-color: hsl(var(--white) / 0);
+    color: hsl(var(--white));
     transition: opacity var(--transition-hover);
 }
 
@@ -35,13 +38,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     flex: 1;
-    border-radius: var(--radius-card);
 }
 
 .course-card-title {
     text-align: center;
     margin: 0;
-    color: hsl(var(--black));
+    color: hsl(var(--white));
+    font-family: var(--font);
     font-size: var(--fs-xl);
     font-weight: var(--fw-s);
     line-height: var(--lh-snug);
@@ -52,8 +55,9 @@
     gap: var(--space-4);
     margin-top: var(--space-5);
     padding: var(--space-3);
-    background-color: hsl(var(--white));
-    border-radius: var(--radius-md);
+    border: 1px solid hsl(var(--white) / 0.3);
+    background-color: hsl(var(--yellow));
+    /* border-radius: var(--radius-md); */
 }
 
 .course-card-deats > div {
@@ -73,27 +77,25 @@
     background-size: contain;
 }
 
-.chapters svg {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23b00000' d='M5 4h14v16H5V4Zm2 2v2h10V6H7Zm0 4v2h10v-2H7Zm0 4v2h7v-2H7Z'/%3E%3C/svg%3E");
+.course-card-deats .course-icon {
+    display: block;
+    width: var(--space-5);
+    height: var(--space-5);
+    flex-shrink: 0;
+    color: hsl(var(--deep-black));
+    stroke: hsl(var(--deep-black));
 }
 
-.duration svg {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23b00000' d='M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9Zm1 5v3.6l2.4 1.4-1 1.7-3.4-2V8h2Z'/%3E%3C/svg%3E");
-}
-
-.level svg {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23b00000' d='m12 3 8 4v5c0 4.4-3.4 7.9-8 9-4.6-1.1-8-4.6-8-9V7l8-4Zm0 3.1L6 9v3c0 3.1 2.2 5.7 6 6.8 3.8-1.1 6-3.7 6-6.8V9l-6-2.9Z'/%3E%3C/svg%3E");
-}
 
 .course-card-deats p {
     margin: 0;
-    color: hsl(var(--black));
+    color: hsl(var(--deep-black));
     font-size: var(--fs-xs);
     line-height: var(--lh-snug);
 }
 
 .course-card-deats p:last-child {
-    color: hsl(var(--black));
+    color: hsl(var(--deep-black));
     font-weight: var(--fw-s);
     text-align: right;
 }

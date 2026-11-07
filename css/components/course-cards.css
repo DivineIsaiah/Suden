@@ -28,7 +28,7 @@
     box-sizing: border-box;
     padding: var(--card-padding-md);
     overflow: hidden;
-    border: 1px solid hsl(var(--white) / 0.6);
+    border: 2px solid hsl(var(--white) / 0.3);
     border-radius: 0;
     background-color: hsl(var(--white) / 0);
     color: hsl(var(--white));
@@ -231,9 +231,14 @@
 }
 
 .course-card-wrap:hover{
-    border-color: var(--card-accent);
+    border-color: hsl(var(--yellow));
 	transform: translate(-4px, -4px);
 	box-shadow: 4px 4px 0 hsl(var(--yellow));
+}
+
+.course-card:hover{
+    border-color: hsl(var(--yellow));
+    border-width: 2px;;
 }
 
 

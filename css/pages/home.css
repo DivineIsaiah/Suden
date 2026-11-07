@@ -286,6 +286,7 @@
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: var(--card-gap-lg);
 	margin-top: var(--space-6);
+	align-items: stretch;
 }
 
 

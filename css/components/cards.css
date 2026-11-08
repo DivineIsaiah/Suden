@@ -226,4 +226,53 @@
 
 
 
+.contact-hd-bx{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-hd-top{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    width: 100%;
+}
+.contact-hd{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.ct-hdtxt{
+    color: hsl(var(--white));
+    font-size: var(--fs-5xl);
+    font-weight: var(--fw-b);
+    line-height: var(--lh-tight);
+}
+
+.ct-subtxt{
+    color: hsl(var(--yellow));
+    font-family: var(--font-main);
+    font-weight: var(--fw-b);
+    font-size: var(--fs-5xl);
+    line-height: var(--lh-tight);
+   
+}
+
+.contact-sub{
+    color: hsl(var(--white)/0.7);
+    font-family: var(--font-main);
+}
+
+.contact-animation{
+    display: block;
+    width: 100%;
+    max-width: 30rem;
+}
+
+
 

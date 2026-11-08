@@ -1,0 +1,124 @@
+.contact-form {
+  --accent: hsl(var(--yellow)); /* red like the image, use #ffe33d for SUDEN yellow */
+  --accent-text: hsl(var(--white)); /* use #080808 if you switch to yellow */
+  --field-bg: hsl(var(--deep-black));
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+  width: 100%;
+  max-width: 520px;
+}
+
+.contact-form .field {
+  position: relative;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: hsl(var(--white)/0.07);
+  border: solid 1px hsl(var(--white)/0.5);
+  padding: 20px 120px 20px 18px; /* right padding keeps text clear of the label */
+  color: hsl(var(--white));
+  font-family: var(--font);
+  font-size: var(--fs-md);
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 130px;
+  padding-right: var(--space-10);
+  resize: none;
+}
+
+.contact-form textarea::placeholder {
+  color:hsl(var(--white)/0.6)
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 0 1px hsl(var(--yellow));
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover{
+    border-color: hsl(var(--yellow));
+}
+
+.contact-form input::placeholder{
+    color: hsl(var(--white)/0.7)
+}
+
+/* label sitting on the right inside the field */
+.contact-form .field p {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  margin: 0;
+  font-size: var(--fs-md);
+  color: hsl(var(--yellow)/0.9);
+  pointer-events: none;
+}
+
+/* terms row */
+.contact-form .terms {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  font-size: var(--fs-md);
+  color: hsl(var(--white)/0.7);
+  cursor: pointer;
+}
+
+.contact-form .terms strong {
+  color: hsl(var(--yellow));
+  font-weight: var(--fw-m);
+}
+
+.contact-form .terms input {
+  display: none; /* hides the native checkbox you see in your screenshot */
+}
+
+.contact-form .terms .box {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: none ;
+    border: 2px solid hsl(var(--yellow));
+    display: grid;
+    place-items: center;
+}
+
+.contact-form .terms input:checked + .box {
+  background: hsl(var(--yellow));
+}
+
+.contact-form .terms input:checked + .box::after {
+    content: "";
+    width: 9px;
+    height: 14px;
+    border: solid hsl(var(--deep-black));
+    border-width: 0 4px 4px 0;
+    transform: translateY(-1px) rotate(45deg);
+}
+
+/* submit button */
+.contact-form button {
+    background: hsl(var(--yellow));
+    color: hsl(var(--deep-black));
+    border: none;
+    padding: var(--space-3);
+    font-family: var(--font-main);
+    font-size: var(--fs-md);
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.contact-form button:hover {
+  filter: brightness(0.85);
+}

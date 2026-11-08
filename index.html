@@ -3572,16 +3572,248 @@
         <section id="contact">
             <div class="contact__wrapper container">
 
-                <div class="contact__content">
-                    <h2 class="contact__head">Get in Touch with Us</h2>
-                    <p class="contact__text">Have a question or need assistance? We're here to help and would love to hear from you.</p>
+                <div class="contact-hd-bx">
+                    <div class="contact-hd-top">
+                        <h2 class="contact-hd">
+                            <span class="ct-hdtxt">
+                                Reach out to 
+                            </span>
+                            <span class="ct-subtxt">
+                                {SUDEN}
+                            </span>
+                        </h2>
+                       
+                        <p class="contact-sub">
+                            Have questions, suggestions, or just want to say hello?
+                            We'd love to hear from you!
+                            Fill out the form below and we'll get
+                            back to you as soon as possible.
+                        </p>
+                    </div>
+                    
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none" class="contact-animation">
+                    <defs>
+                        <linearGradient id="body" x1="150" y1="200" x2="360" y2="430" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#454545"/>
+                        <stop offset="1" stop-color="#101010"/>
+                        </linearGradient>
+                        <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+                        <stop stop-color="#FFF17A"/>
+                        <stop offset="1" stop-color="#E5AD00"/>
+                        </linearGradient>
+                        <linearGradient id="black" x1="0" y1="0" x2="1" y2="1">
+                        <stop stop-color="#444"/>
+                        <stop offset="1" stop-color="#080808"/>
+                        </linearGradient>
+                    </defs>
 
-                    <a href="mailto:hello@example.com" class="contact__btn">Send Us a Mail</a>
-                </div>
+                    <!-- Pixel particles -->
+                    <g fill="#FFE33D">
+                        <rect x="68" y="226" width="12" height="12">
+                        <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+                        </rect>
+                        <rect x="430" y="220" width="10" height="10">
+                        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+                        </rect>
+                        <rect x="105" y="135" width="8" height="8">
+                        <animate attributeName="opacity" values="0;1;0" dur=".8s" repeatCount="indefinite"/>
+                        </rect>
+                        <rect x="397" y="131" width="9" height="9">
+                        <animate attributeName="opacity" values="1;0;1" dur=".8s" repeatCount="indefinite"/>
+                        </rect>
+                    </g>
 
-                <div class="contact__illustration">
-                    <svg aria-hidden="true" class="contact__illustration-svg"></svg>
+                    <!-- Ringing waves -->
+                    <g stroke="#FFE33D" stroke-width="8" stroke-linecap="square" fill="none">
+                        <g>
+                        <path d="M105 175 Q65 140 91 99"/>
+                        <path d="M79 197 Q28 150 63 72"/>
+                        <animate attributeName="opacity" values=".2;1;.2" dur="1s" repeatCount="indefinite"/>
+                        </g>
+                        <g>
+                        <path d="M407 175 Q447 140 421 99"/>
+                        <path d="M433 197 Q484 150 449 72"/>
+                        <animate attributeName="opacity" values="1;.2;1" dur="1s" repeatCount="indefinite"/>
+                        </g>
+                    </g>
+
+                    <!-- Coiled telephone cord -->
+                    <path d="M363 177
+                        C415 190 390 213 425 222
+                        C459 232 400 248 425 265
+                        C455 282 401 296 423 313
+                        C448 332 400 348 408 365
+                        C418 380 392 390 375 385"
+                        stroke="#050505" stroke-width="19" stroke-linecap="square"/>
+                    <path d="M363 177
+                        C415 190 390 213 425 222
+                        C459 232 400 248 425 265
+                        C455 282 401 296 423 313
+                        C448 332 400 348 408 365
+                        C418 380 392 390 375 385"
+                        stroke="#555" stroke-width="5" stroke-linecap="square"/>
+
+                    <!-- Vintage handset -->
+                    <g>
+                        <animateTransform attributeName="transform"
+                        type="rotate"
+                        values="0 256 156;-9 256 156;7 256 156;0 256 156"
+                        dur=".65s" repeatCount="indefinite"/>
+
+                        <!-- Main curved receiver body -->
+                        <path d="M112 112 L124 83 L145 72 L171 77
+                        L205 104 L307 104 L341 77
+                        L367 72 L389 83 L400 112
+                        L388 141 L364 157 L340 145
+                        L318 124 L194 124 L172 145
+                        L148 157 L124 141 Z"
+                        fill="#050505" stroke="#000" stroke-width="9"/>
+
+                        <path d="M112 112 L124 83 L145 72 L171 77
+                        L205 104 L307 104 L341 77
+                        L367 72 L389 83 L400 112
+                        L388 141 L364 157 L340 145
+                        L318 124 L194 124 L172 145
+                        L148 157 L124 141 Z"
+                        fill="url(#black)" stroke="#777" stroke-width="3"/>
+
+                        <!-- Receiver end caps -->
+                        <path d="M112 112 L124 83 L145 72 L171 77
+                        L185 105 L171 143 L148 157
+                        L124 141 Z" fill="url(#gold)" stroke="#E2AC00" stroke-width="4"/>
+
+                        <path d="M327 105 L341 77 L367 72 L389 83
+                        L400 112 L388 141 L364 157
+                        L341 143 Z" fill="url(#gold)" stroke="#E2AC00" stroke-width="4"/>
+
+                        <!-- Dark speaker faces -->
+                        <path d="M125 109 L139 91 L160 91 L173 108
+                        L162 132 L141 137 L125 125 Z" fill="#080808"/>
+                        <path d="M338 108 L352 91 L373 91 L387 109
+                        L387 125 L371 137 L350 132 Z" fill="#080808"/>
+
+                        <!-- Speaker pixel holes -->
+                        <g fill="#777">
+                        <rect x="143" y="105" width="8" height="8"/>
+                        <rect x="156" y="105" width="7" height="8"/>
+                        <rect x="150" y="118" width="8" height="7"/>
+                        <rect x="354" y="105" width="8" height="8"/>
+                        <rect x="367" y="105" width="7" height="8"/>
+                        <rect x="360" y="118" width="8" height="7"/>
+                        </g>
+
+                        <!-- Highlight -->
+                        <path d="M147 79 L165 81 L188 105"
+                        stroke="#FFE97A" stroke-width="5"/>
+                        <path d="M344 81 L366 78" stroke="#FFE97A" stroke-width="5"/>
+                    </g>
+
+                    <!-- Telephone base shadow -->
+                    <ellipse cx="256" cy="448" rx="155" ry="15" fill="#000" opacity=".55"/>
+
+                    <!-- Telephone body -->
+                    <path d="M112 241 L145 204 L367 204
+                        L400 241 L425 388 L390 425
+                        L122 425 L87 388 Z"
+                        fill="#080808" stroke="#000" stroke-width="10"/>
+
+                    <path d="M112 241 L145 204 L367 204
+                        L400 241 L425 388 L390 425
+                        L122 425 L87 388 Z"
+                        fill="url(#body)" stroke="#666" stroke-width="4"/>
+
+                    <!-- Top surface -->
+                    <path d="M145 204 H367 L400 241 H112 Z" fill="#555"/>
+                    <path d="M112 241 L145 204 H367 L400 241"
+                        stroke="#888" stroke-width="3"/>
+
+                    <!-- Handset cradle -->
+                    <g fill="#111" stroke="#FFE33D" stroke-width="3">
+                        <path d="M155 208 V187 L170 173 H190 V208 Z"/>
+                        <path d="M322 208 V187 L337 173 H357 V208 Z"/>
+                    </g>
+
+                    <!-- Rotary dial outer ring -->
+                    <circle cx="256" cy="306" r="89" fill="#080808" stroke="#000" stroke-width="9"/>
+                    <circle cx="256" cy="306" r="78" fill="url(#gold)" stroke="#C48D00" stroke-width="5"/>
+                    <circle cx="256" cy="306" r="63" fill="#D7A900"/>
+
+                    <!-- Rotary finger holes -->
+                    <g fill="#101010" stroke="#8C6800" stroke-width="3">
+                        <circle cx="256" cy="245" r="12"/>
+                        <circle cx="294" cy="258" r="12"/>
+                        <circle cx="318" cy="291" r="12"/>
+                        <circle cx="310" cy="333" r="12"/>
+                        <circle cx="277" cy="357" r="12"/>
+                        <circle cx="235" cy="357" r="12"/>
+                        <circle cx="201" cy="333" r="12"/>
+                        <circle cx="194" cy="291" r="12"/>
+                        <circle cx="218" cy="258" r="12"/>
+                    </g>
+
+                    <!-- Dial center -->
+                    <circle cx="256" cy="306" r="36" fill="#101010" stroke="#FFE33D" stroke-width="4"/>
+                    <text x="256" y="317" text-anchor="middle"
+                        fill="#FFE33D" font-family="monospace"
+                        font-size="32" font-weight="bold">S</text>
+
+                    <!-- Rotary finger stop -->
+                    <path d="M309 347 L334 369 L347 357 L323 333 Z"
+                        fill="#FFF17A" stroke="#A77B00" stroke-width="4"/>
+
+                    <!-- Base yellow trim -->
+                    <path d="M94 390 L122 414 H390 L418 390"
+                        stroke="#FFE33D" stroke-width="8" fill="none"/>
+
+                    <!-- Base feet -->
+                    <path d="M126 425 H177 V439 H126 Z" fill="#D9A500"/>
+                    <path d="M335 425 H386 V439 H335 Z" fill="#D9A500"/>
+                    <path d="M132 429 H171" stroke="#FFE97A" stroke-width="3"/>
+                    <path d="M341 429 H380" stroke="#FFE97A" stroke-width="3"/>
+
+                    <!-- Pixelated ringing sparks -->
+                    <g fill="#FFE33D">
+                        <path d="M52 257 H64 V269 H52 Z">
+                        <animate attributeName="opacity" values="1;0;1" dur=".7s" repeatCount="indefinite"/>
+                        </path>
+                        <path d="M449 251 H461 V263 H449 Z">
+                        <animate attributeName="opacity" values="0;1;0" dur=".7s" repeatCount="indefinite"/>
+                        </path>
+                        <rect x="95" y="315" width="8" height="8">
+                        <animate attributeName="opacity" values=".2;1;.2" dur="1.2s" repeatCount="indefinite"/>
+                        </rect>
+                        <rect x="409" y="319" width="8" height="8">
+                        <animate attributeName="opacity" values="1;.2;1" dur="1.2s" repeatCount="indefinite"/>
+                        </rect>
+                    </g>
+                    </svg>
+
                 </div>
+                
+                <form action="" class="contact-form">
+                    <div class="field">
+                        <input type="text" id="name" placeholder="Elrond Elf">
+                        <p>First Name</p>
+                    </div>
+
+                    <div class="field">
+                        <input type="email" id="email" placeholder="Elrond@hisemail.com">
+                        <p>Email Address</p>
+                    </div>
+
+                    <div class="field">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+
+                    <label class="terms">
+                        <input type="checkbox">
+                        <span class="box"></span>
+                        <span>I accept the <strong>Terms of Conditions</strong></span>
+                    </label>
+
+                    <button type="submit">Submit Message</button>
+                </form>
 
             </div>
         </section>
@@ -3593,12 +3825,33 @@
         <div class="footer__wrapper container">
 
             <div class="footer__brand">
-                <div class="logo-bx">
-                    <a class="logo-txt" href="./index.html" aria-label="SUDEN home">
-                        <span aria-hidden="true">S</span><span aria-hidden="true">U</span><span aria-hidden="true">D</span><span aria-hidden="true">E</span><span aria-hidden="true">N</span>
-                    </a>
-                </div>
-                <p class="footer__tagline">#redefiningeducation</p>
+                
+                <a class="logo-bx" href="./index.html" aria-label="SUDEN home">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 550 550"
+                        width="550"
+                        height="550"
+                        class="logo-img"
+                        alt="SUDEN logo">
+
+                        <rect width="550" height="550" fill="#FFE24A"/>
+
+                        <path
+                        fill="#101010"
+                        transform="translate(100 475) scale(1 -1)"
+                        d="M50 350V250H100V350ZM100 250V200H250V250ZM250 50H100V0H250ZM100 50V100H50V50ZM250 200V50H300V200ZM100 400V350H250V400ZM250 350V300H300V350Z"/>
+
+                    </svg>
+
+                    
+                    <p class="logo-txt" href="./index.html" aria-label="SUDEN home">
+                        Suden
+                    </p>
+
+                </a>
+                
+                
             </div>
 
             <div class="footer__columns">

@@ -4,7 +4,6 @@
 
 #site-footer {
     background-color: hsl(var(--black));
-    color: hsl(var(--white));
     padding: var(--space-16) var(--page-padding-x) var(--space-8);
 }
 
@@ -75,17 +74,16 @@
 }
 
 .footer__list a:hover {
-    color: hsl(var(--txt-w));
+    color: hsl(var(--yellow));
 }
 
 .footer__badge {
     padding: var(--space-1) var(--space-2);
-    background-color: hsl(var(--gold));
+    background-color: hsl(var(--yellow));
     color: hsl(var(--black));
     font-size: 0.65rem;
     font-weight: var(--fw-b);
     letter-spacing: 0.02em;
-    border-radius: var(--radius-sm);
     white-space: nowrap;
 }
 
@@ -139,21 +137,29 @@
     justify-content: center;
     width: var(--space-10);
     height: var(--space-10);
-    background-color: hsl(0 0% 15%);
-    border-radius: var(--radius-md);
-    color: hsl(var(--txt-w));
-    transition: background-color var(--transition-hover);
-}
-
-.footer__social-icon:hover {
-    background-color: hsl(0 0% 22%);
+    background-color: hsl(var(--yellow) / 0.1) ;
+    color: hsl(var(--white));
+    text-decoration: none;
+    transition: background-color var(--transition-hover),
+                color var(--transition-hover);
 }
 
 .footer__social-icon svg {
-    width: var(--space-5);
-    height: var(--space-5);
-    fill: hsl(var(--txt-w));
+    display: block;
+    min-width: 24px;
+    min-height: 24px;
+    flex-shrink: 0;
+    stroke: hsl(var(--deep-black));
+    fill: hsl(var(--white));
+    opacity: 1 ;
+    visibility: visible ;
 }
+
+.footer__social-icon:hover {
+    background-color: hsl(var(--yellow));
+    color: hsl(var(--black));
+}
+
 
 .footer__playstore {
     display: inline-block;

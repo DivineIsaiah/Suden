@@ -6,10 +6,10 @@
 .course-card-wrap {
     position: relative;
     height: 100%;
-    transition:
+    /* transition:
 		border-color var(--transition-fast),
 		transform var(--transition-fast),
-		box-shadow var(--transition-fast);
+		box-shadow var(--transition-fast); */
 }
 
 
@@ -30,9 +30,11 @@
     overflow: hidden;
     border: 2px solid hsl(var(--white) / 0.3);
     border-radius: 0;
-    background-color: hsl(var(--white) / 0);
+    background-color: hsl(var(--white) / 0.06);
     color: hsl(var(--white));
-    transition: opacity var(--transition-hover);
+    transition:   transform var(--transition-fast),
+        box-shadow var(--transition-fast),
+        border-color var(--transition-fast);;
 }
 
 
@@ -80,14 +82,20 @@
 
 .info-btn:hover {
     color: hsl(var(--yellow));
-    border-color: hsl(var(--yellow));
-    background: hsl(var(--yellow) / 0.08);
+    outline: 2px solid hsl(var(--yellow));
+    background: hsl(var(--yellow) / 0);
 }
 
 .course-card-wrap:hover .course-card .info-btn {
     color: hsl(var(--yellow));
     border-color: hsl(var(--yellow));
-    background: hsl(var(--yellow) / 0.08);
+    /* background: hsl(var(--yellow) / 0.08); */
+}
+
+.course-card-wrap:hover .course-card {
+    border-color: hsl(var(--yellow));
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 hsl(var(--yellow));
 }
 /* INFORMATION ICON */
 
@@ -200,7 +208,7 @@
         0 var(--space-3) var(--space-8) hsl(var(--black) / 0.18);
 
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
 
     /* Initial curtain position */
@@ -214,12 +222,17 @@
         opacity 200ms ease,
         visibility 450ms;
 
-    z-index: 20;
+    z-index: 100;
     pointer-events: none;
 }
 
 
 /* OVERLAY OPEN STATE */
+
+.course-card-wrap:hover,
+.course-card-wrap.is-open {
+    z-index: 200;
+}
 
 .course-card-wrap.is-open .course-card-hover {
     opacity: 1;
@@ -230,16 +243,17 @@
     transform: translateY(0);
 }
 
-.course-card-wrap:hover{
+/* .course-card-wrap:hover{
     border-color: hsl(var(--yellow));
 	transform: translate(-4px, -4px);
 	box-shadow: 4px 4px 0 hsl(var(--yellow));
-}
+    opacity: 1;
+} */
 
-.course-card:hover{
+/* .course-card:hover{
     border-color: hsl(var(--yellow));
     border-width: 2px;;
-}
+} */
 
 
 
